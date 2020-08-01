@@ -8,11 +8,11 @@ import kotlinx.android.synthetic.main.fragment_second.view.*
 
 class SecondFragment : Fragment(R.layout.fragment_second) {
 
-    val args: SecondFragmentArgs by navArgs()
+    private val args: SecondFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//
+
         val myNumber=args.number
         view.textView2.text = myNumber.toString()
 
@@ -21,4 +21,9 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
             Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_firstFragment)
         }
     }
+
+    /** Receive data from bundle */
+
+//    val countryId = arguments?.getInt(getString(R.string.country_id))
+
 }

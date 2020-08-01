@@ -17,4 +17,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    /** To enable the ActionBar to show a back button whenever a child fragment is attached to this Activity.*/
+
+//    NavigationUI.setupActionBarWithNavController(this, navigationController)
+//    (activity as AppCompatActivity).supportActionBar?.title = "Piyush Maheswari"
+
+    /** Correctly handle up and back action */
+
+//    override fun onSupportNavigateUp()   = navigationController.navigateUp()
+
 }

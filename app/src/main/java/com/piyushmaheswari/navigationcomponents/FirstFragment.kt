@@ -16,5 +16,12 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
     }
 
+    /** Data can be send through bundle between fragments- Sending */
 
+//    val countryFactBundle = Bundle().apply {
+//        putInt(getString(R.string.country_id), country.id)
+//    }
+//
+//    Navigation.findNavController()?.navigate(
+//    R.id.action_countryListFragment_to_countryDetailsFragment2,countryFactBundle)
 }
