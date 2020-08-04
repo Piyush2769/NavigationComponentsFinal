@@ -8,18 +8,24 @@ import kotlinx.android.synthetic.main.fragment_second.view.*
 
 class SecondFragment : Fragment(R.layout.fragment_second) {
 
-    private val args: SecondFragmentArgs by navArgs()
+//    private val args: SecondFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val myNumber=args.number
-        view.textView2.text = myNumber.toString()
-
         view.textView2.setOnClickListener{
-
-            Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_firstFragment)
+            Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)
         }
+
+        /** Data can be send through Safe Args between fragments- Receiving */
+
+//        val myNumber=args.number
+//        view.textView2.text = myNumber.toString()
+//
+//        view.textView2.setOnClickListener{
+//
+//            Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_firstFragment)
+//        }
     }
 
     /** Receive data from bundle */

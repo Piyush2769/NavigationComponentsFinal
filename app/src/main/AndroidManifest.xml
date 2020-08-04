@@ -18,6 +18,7 @@
         </activity>
 
         <activity android:name=".DrawerMainActivity">
+<!--                    ToDo: Step 0-->
         </activity>
     </application>
 

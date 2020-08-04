@@ -10,10 +10,17 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         view.textView.setOnClickListener{
-            val action= FirstFragmentDirections.actionFirstFragmentToSecondFragment(56)
-            Navigation.findNavController(view).navigate(action)
+            Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)
         }
+
+        /** Data can be send through Safe Args between fragments- Sending */
+
+//        view.textView.setOnClickListener{
+//            val action= FirstFragmentDirections.actionFirstFragmentToSecondFragment(56)
+//            Navigation.findNavController(view).navigate(action)
+//        }
     }
 
     /** Data can be send through bundle between fragments- Sending */
@@ -22,6 +29,5 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
 //        putInt(getString(R.string.country_id), country.id)
 //    }
 //
-//    Navigation.findNavController()?.navigate(
-//    R.id.action_countryListFragment_to_countryDetailsFragment2,countryFactBundle)
+//    Navigation.findNavController()?.navigate(R.id.action_countryListFragment_to_countryDetailsFragment2,countryFactBundle)
 }

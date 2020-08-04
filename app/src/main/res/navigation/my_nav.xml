@@ -15,9 +15,9 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
-<!--            app:popUpTo="@id/firstFragment"-->
-<!--            app:popUpToInclusive="true" -->
+            app:popExitAnim="@anim/slide_out_right" />
+        <!--            app:popUpTo="@id/firstFragment"-->
+        <!--            app:popUpToInclusive="true" -->
 
     </fragment>
     <fragment
@@ -31,11 +31,12 @@
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_left"
-            />
-        <argument
-            android:name="number"
-            android:defaultValue="69"
-            app:argType="integer" />
+            app:popExitAnim="@anim/slide_out_left" />
+
+<!--        <argument-->
+<!--            android:name="number"-->
+<!--            android:defaultValue="69"-->
+<!--            app:argType="integer" />-->
+
     </fragment>
 </navigation>
