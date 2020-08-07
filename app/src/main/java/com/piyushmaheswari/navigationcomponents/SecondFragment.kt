@@ -1,4 +1,5 @@
 package com.piyushmaheswari.navigationcomponents
+
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -13,7 +14,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.textView2.setOnClickListener{
+        view.textView2.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)
         }
 
