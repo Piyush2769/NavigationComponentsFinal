@@ -15,7 +15,8 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         super.onViewCreated(view, savedInstanceState)
 
         view.textView2.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)
+                Navigation.findNavController(view)
+                    .navigate(R.id.action_secondFragment_to_firstFragment)
         }
 
         /** Data can be send through Safe Args between fragments- Receiving */
