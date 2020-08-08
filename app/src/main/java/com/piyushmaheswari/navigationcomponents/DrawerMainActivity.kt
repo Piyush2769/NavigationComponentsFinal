@@ -38,29 +38,18 @@ class DrawerMainActivity : AppCompatActivity() {
 //        ToDo: Step 7: Run App
 
 //        ToDo: Step 11
-//        listener =
-//            NavController.OnDestinationChangedListener { controller, destination, arguments ->
-//                if (destination.id == R.id.firstFragment) {
+//        navController.addOnDestinationChangedListener { _, destination, _ ->
+//            when (destination.id) {
+//                R.id.firstFragment -> {
 //                    supportActionBar?.title = "First Fragment"
-//                } else if (destination.id == R.id.secondFragment) {
+//                }
+//                else -> {
 //                    supportActionBar?.title = "Second Fragment"
 //                }
 //            }
+//        }
 
     }
-
-//    ToDo: Step 13
-//    override fun onPause() {
-//        super.onPause()
-//        navController.removeOnDestinationChangedListener(listener)
-//
-//    }
-
-//    ToDo: Step 14
-//    override fun onResume() {
-//        super.onResume()
-//        navController.addOnDestinationChangedListener(listener)
-//    }
 
 //    ToDo: Step 8
 //    override fun onSupportNavigateUp(): Boolean {
